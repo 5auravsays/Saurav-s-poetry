@@ -7,3 +7,10 @@ const poem2 = {
     "कहानी लिखे नए हर पल में।"
   ]
 };
+
+title: "chehra",
+lines: [
+     "har chehre me hote hai hazar <br>
+chehre jisko bhi dekhna <br><br> 
+
+kai baar dekhna
