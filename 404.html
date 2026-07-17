@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>चिड़िया उड़ गई — पृष्ठ नहीं मिला</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hind:wght@400;500;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{
+    margin:0; height:100%;
+    background: radial-gradient(ellipse at 50% 30%, #2b2860, #0b0c2a 70%);
+    color:#fbf7ee;
+    font-family:'Hind', sans-serif;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    overflow:hidden;
+  }
+  .wrap{ padding:6vh 6vw; max-width:34rem; }
+  .bird{
+    font-size:3rem;
+    display:inline-block;
+    animation: flyAway 2.4s ease-in forwards;
+  }
+  @keyframes flyAway{
+    0%{ transform:translate(0,0) rotate(0deg); opacity:1; }
+    100%{ transform:translate(220px,-160px) rotate(18deg); opacity:0; }
+  }
+  h1{
+    font-family:'Rozha One', serif;
+    font-size:clamp(2.2rem, 6vw, 3.2rem);
+    margin:1rem 0 0.5rem;
+    color:#f6d776;
+    text-shadow:0 0 30px rgba(246,215,118,0.35);
+  }
+  p{ font-size:1.1rem; opacity:0.85; margin:0.5rem 0 2rem; }
+  a{
+    font-family:'Poppins', sans-serif;
+    font-size:0.85rem;
+    letter-spacing:0.08em;
+    color:#0b0c2a;
+    background:#f6d776;
+    padding:0.8rem 1.6rem;
+    border-radius:999px;
+    text-decoration:none;
+    transition:transform 0.2s ease;
+    display:inline-block;
+  }
+  a:hover, a:focus-visible{ transform:translateY(-2px); }
+  @media (prefers-reduced-motion: reduce){
+    .bird{ animation:none; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="bird" aria-hidden="true">🕊️</span>
+    <h1>यह पृष्ठ उड़ गया</h1>
+    <p>जो आप ढूँढ रहे थे, वह शायद कहीं और घोंसला बना चुका है।</p>
+    <a href="index.html">वापस आसमान में लौटें →</a>
+  </div>
+</body>
+</html>
