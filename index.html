@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>उड़ान — सफ़ेद पंखों की कविता | Saurav Leekha</title>
+<meta name="description" content="एक चमकती सफ़ेद चिड़िया की उड़ान — कविता और एनिमेशन का संगम। Created by Saurav Leekha">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hind:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= SKY / BACKGROUND LAYER (fixed) ================= -->
+  <div class="sky" id="sky" aria-hidden="true">
+    <div class="stars" id="stars"></div>
+    <div class="sun" id="sun"></div>
+    <div class="clouds" id="clouds"></div>
+
+    <!-- The signature element: the glowing white bird -->
+    <div class="bird-wrap" id="birdWrap">
+      <div class="bird-glow"></div>
+      <svg class="bird" id="bird" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <g class="wing wing-left">
+          <path d="M100 55 C 60 20, 10 15, 0 40 C 30 45, 70 55, 100 55 Z"/>
+        </g>
+        <g class="wing wing-right">
+          <path d="M100 55 C 140 20, 190 15, 200 40 C 170 45, 130 55, 100 55 Z"/>
+        </g>
+        <ellipse class="body" cx="100" cy="58" rx="14" ry="7"/>
+        <path class="tail" d="M88 60 L 68 72 L 92 66 Z"/>
+      </svg>
+    </div>
+
+    <div class="tree-layer tree-back" aria-hidden="true"></div>
+    <div class="tree-layer tree-front" aria-hidden="true"></div>
+  </div>
+
+  <!-- ================= SCROLL PROGRESS BAR ================= -->
+  <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
+  <!-- ================= CONTENT ================= -->
+  <main id="content">
+
+    <section class="hero">
+      <p class="eyebrow">एक कविता यात्रा</p>
+      <h1 class="hero-title">उड़ान</h1>
+      <p class="hero-sub">जहाँ एक सफ़ेद चमकती चिड़िया, आसमान को अपनी कलम बनाती है</p>
+      <div class="scroll-cue">
+        <span>नीचे स्क्रॉल करें</span>
+        <span class="arrow">↓</span>
+      </div>
+    </section>
+
+    <!-- Poem sections are injected here by script.js from the `poems` array,
+         so adding a new page of poetry is just adding one object to that array. -->
+    <div id="poemContainer"></div>
+
+    <section class="outro">
+      <p class="outro-line">यात्रा यहीं नहीं रुकती...</p>
+      <p class="outro-sub">हर स्क्रॉल के साथ एक नया आसमान खुलता है</p>
+      <footer class="credit">
+        <span class="credit-bird">✦</span>
+        Created by <strong>Saurav Leekha</strong>
+        <span class="credit-bird">✦</span>
+      </footer>
+    </section>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
