@@ -10,7 +10,7 @@ const poem2 = {
 
 title: "chehra",
 lines: [
-     "har chehre me hote hai hazar <br>
-chehre jisko bhi dekhna <br><br> 
+     "har chehre me hote hai hazar"
+"chehre jisko bhi dekhna"
 
-kai baar dekhna
+"kai baar dekhna"
