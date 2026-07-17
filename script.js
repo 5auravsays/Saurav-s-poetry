@@ -51,6 +51,15 @@ const poems = [
       "कहानी लिखे नए हर पल में।"
     ]
   }
+title: "chehra",
+lines: [
+     "har chehre me hote hai hazar"
+"chehre jisko bhi dekhna"
+
+"kai baar dekhna"
+]
+};
+
 
   // 👇 Naya page jodna ho to bas yahan ek naya object daalo:
   // {
